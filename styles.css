@@ -1,0 +1,168 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b2b34; /* Deep Blue */
+    color: #ffffff; /* Primary text color */
+    line-height: 1.6;
+    cursor: url('images/family-guy-evil-monkey-hand-cursor.png') 32 32, auto; /* Custom hand cursor */
+}
+
+body.click-animate {
+    cursor: url('images/family-guy-evil-monkey-face-cursor.png') 64 64, auto; /* Custom face click animation cursor */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #3c485e; /* Medium Blue */
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    animation: fadeInDown 1s;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s, transform 0.3s;
+    border-radius: 5px;
+    cursor: url('images/family-guy-evil-monkey-hand-cursor.png') 32 32, pointer; /* Custom hand cursor for links */
+}
+
+nav ul li a:hover {
+    background: rgba(96, 125, 139, 0.2); /* Light Blue with transparency */
+    transform: scale(1.1);
+}
+
+main {
+    padding: 2rem 0;
+    margin-top: 150px; /* Ensure there's space for the fixed header */
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #2a3a46; /* Dark Gray */
+    color: white; /* Light text color for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    scroll-margin-top: 150px; /* Adjust for fixed header */
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #607d8b; /* Light Blue */
+    text-align: center;
+    font-size: 2rem;
+    animation: fadeInUp 1s;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: #455a64; /* Medium Gray */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #78909c; /* Light Gray */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
