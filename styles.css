@@ -2,15 +2,16 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1b2b34; /* Deep Blue */
-    color: #ffffff; /* Primary text color */
+    background-color: #1b2b34; /* Dark Blue */
+    color: #ffffff; /* Light text color for contrast */
     line-height: 1.6;
-    cursor: url('images/family-guy-evil-monkey-hand-cursor.png') 32 32, auto; /* Custom hand cursor */
+    cursor: url('family-guy-evil-monkey-hand-cursor.png'), auto; /* Default cursor */
 }
 
 body.click-animate {
-    cursor: url('images/family-guy-evil-monkey-face-cursor.png') 64 64, auto; /* Custom face click animation cursor */
+    cursor: url('family-guy-evil-monkey-face-cursor.png'), auto; /* Click cursor */
 }
+
 
 .container {
     width: 80%;
